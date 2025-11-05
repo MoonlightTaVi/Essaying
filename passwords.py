@@ -12,6 +12,7 @@ tags: list = []
 
 def setup():
     global essay_text, tags, essay_file
+    wdir.base = __file__
     essay_file = wdir.abs(essay_file)
     if not wdir.exists(essay_file):
         essay.write_essay(essay_file)
